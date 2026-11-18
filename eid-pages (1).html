@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eid Mubarak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#f2c46d; --gold-soft:#ffe3a3; --ink:#fff8e8; --night:#08182b; --teal:#2fb5a0; --rose:#e0708a;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100%;
+  background:linear-gradient(180deg,#0f2a4a 0%,#1d4a6b 70%,#2f6c7e 100%) fixed;
+  color:var(--ink);
+  font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  display:flex; flex-direction:column; align-items:center; overflow-x:hidden;
+}
+nav{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem;
+  padding:1rem 1rem 0; width:100%; max-width:760px;
+}
+nav a{
+  color:var(--gold-soft); text-decoration:none; font-size:1.15rem; font-weight:600;
+  padding:.4rem 1rem; border-radius:999px; border:1.5px solid transparent;
+}
+nav a:hover{border-color:var(--gold)}
+nav a[aria-current="page"]{background:var(--gold);color:var(--night)}
+nav a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+main{width:100%;max-width:760px;padding:1.5rem 1.25rem 3rem;text-align:center}
+section[hidden]{display:none}
+.art{width:100%;height:auto;display:block;margin:0 auto;border-radius:1.25rem}
+.arabic{font-family:"Amiri","Traditional Arabic",serif;font-size:clamp(2.4rem,9vw,4rem);color:var(--gold);margin:1.4rem 0 0;line-height:1.25}
+h1{font-weight:600;font-size:clamp(2.2rem,8.5vw,3.8rem);margin:.2rem 0 .6rem;letter-spacing:.02em;color:var(--gold-soft)}
+p{font-size:clamp(1.15rem,3.6vw,1.45rem);line-height:1.6;max-width:34rem;margin:.5rem auto}
+button{
+  margin-top:1.4rem; font:inherit; font-size:1.2rem; font-weight:600; padding:.7rem 1.6rem;
+  border-radius:999px; border:2px solid var(--gold); background:transparent; color:var(--gold-soft); cursor:pointer;
+}
+button:hover{background:var(--gold);color:var(--night)}
+.wish{min-height:2.6em;color:var(--gold-soft)}
+.twinkle{animation:tw 3s ease-in-out infinite}
+.twinkle:nth-child(2n){animation-delay:1s}
+.twinkle:nth-child(3n){animation-delay:2s}
+@keyframes tw{0%,100%{opacity:.35}50%{opacity:1}}
+.swing{transform-box:fill-box;transform-origin:50% 0;animation:sw 4s ease-in-out infinite}
+@keyframes sw{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@media (prefers-reduced-motion:reduce){.twinkle,.swing{animation:none}}
+:root{--n1:#ff2bd6;--n2:#19f9ff;--n3:#b6ff3b;--n4:#ffe14a}
+.lights{display:flex;justify-content:space-around;width:100%;padding:.6rem .5rem 0;border-top:2px solid #243b5c}
+.lights i{width:12px;height:12px;border-radius:50%;background:var(--c);box-shadow:0 0 6px var(--c),0 0 16px var(--c),0 0 28px var(--c);animation:bulb 1.8s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes bulb{0%,100%{opacity:1}50%{opacity:.25}}
+nav a{color:var(--n2);text-shadow:0 0 8px var(--n2)}
+nav a:hover{border-color:var(--n2);box-shadow:0 0 12px var(--n2)}
+nav a[aria-current="page"]{background:transparent;color:var(--n1);border-color:var(--n1);text-shadow:0 0 8px var(--n1);box-shadow:0 0 10px var(--n1),inset 0 0 10px rgba(255,43,214,.45)}
+h1{color:#fff;text-shadow:0 0 6px #fff,0 0 14px var(--n1),0 0 30px var(--n1),0 0 55px var(--n1)}
+.arabic{color:#fff7c2;text-shadow:0 0 6px #ffe14a,0 0 16px var(--n4),0 0 34px var(--n4)}
+.art{box-shadow:0 0 0 3px var(--n2),0 0 18px var(--n2),0 0 44px rgba(25,249,255,.55)}
+button{color:var(--n3);border-color:var(--n3);text-shadow:0 0 8px var(--n3);box-shadow:0 0 10px var(--n3),inset 0 0 10px rgba(182,255,59,.3)}
+button:hover{background:var(--n3);color:var(--night);text-shadow:none;box-shadow:0 0 22px var(--n3)}
+.wish{color:var(--n4);text-shadow:0 0 10px var(--n4)}
+footer{width:100%;text-align:center;padding:0 1rem 2.5rem}
+.sign{display:inline-block;font-size:clamp(1.4rem,5vw,2.1rem);font-weight:600;color:#fff;padding:.5rem 1.6rem;border:3px solid var(--n2);border-radius:.9rem;text-shadow:0 0 6px #fff,0 0 14px var(--n2),0 0 30px var(--n2);box-shadow:0 0 10px var(--n2),0 0 26px var(--n2),inset 0 0 14px rgba(25,249,255,.5);animation:flick 5s linear infinite}
+@keyframes flick{0%,18%,22%,62%,64%,100%{opacity:1}20%,63%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.lights i,.sign{animation:none}}
+.form{max-width:30rem;margin:1rem auto 0;text-align:left}
+.form label{display:block;margin:1rem 0 .3rem;font-size:1.15rem;color:var(--n2);text-shadow:0 0 6px var(--n2)}
+.form input,.form textarea{width:100%;font:inherit;font-size:1.15rem;padding:.65rem .9rem;border-radius:.7rem;border:2px solid var(--n2);background:#08182b;color:var(--ink);box-shadow:0 0 10px rgba(25,249,255,.4)}
+.form input:focus-visible,.form textarea:focus-visible{outline:3px solid var(--n4);outline-offset:2px}
+a.btn{display:block;text-align:center;margin-top:1.4rem;font-size:1.25rem;font-weight:600;text-decoration:none;padding:.8rem 1.6rem;border-radius:999px;border:2px solid #25d366;background:#25d366;color:#04200f;box-shadow:0 0 12px #25d366,0 0 28px rgba(37,211,102,.6)}
+a.btn:hover{background:transparent;color:#25d366;text-shadow:0 0 8px #25d366}
+a.btn:focus-visible{outline:3px solid var(--n4);outline-offset:3px}
+.form .wish{text-align:center;min-height:1.6em}
+:root{--n1:#ffb000;--n2:#ffd34d;--n3:#ffe27a;--n4:#fff0a8}
+body{background:radial-gradient(ellipse at 50% 0%,#4a3207 0%,#140d02 45%,#000 100%) fixed}
+.lights,nav,main,footer{position:relative;z-index:1}
+.bg{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55}
+.bg svg{width:100%;height:100%;filter:drop-shadow(0 0 5px #ffb000) drop-shadow(0 0 16px #ffb000);animation:pulse 5s ease-in-out infinite}
+.bg path,.bg circle{fill:none;stroke:#ffd34d;stroke-width:3;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+@keyframes pulse{0%,100%{opacity:.7}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.bg svg{animation:none}}
+.lights{border-top-color:#4a3207}
+.art{box-shadow:0 0 0 3px var(--n2),0 0 18px var(--n2),0 0 44px rgba(255,176,0,.55)}
+nav a[aria-current="page"]{box-shadow:0 0 10px var(--n1),inset 0 0 10px rgba(255,176,0,.45)}
+.form input,.form textarea{box-shadow:0 0 10px rgba(255,176,0,.4);background:#0a0702}
+.sign{box-shadow:0 0 10px var(--n2),0 0 26px var(--n2),inset 0 0 14px rgba(255,176,0,.5)}
+button{box-shadow:0 0 10px var(--n3),inset 0 0 10px rgba(255,211,77,.3)}
+button:hover{box-shadow:0 0 22px var(--n3)}
+#family .art>rect:first-of-type,#dua .art>rect:first-of-type,#send .art>rect:first-of-type{fill:#050505}
+#family .art>rect:nth-of-type(2){fill:#1a1205}
+#dua .art [fill="#1b2f66"],#send .art [fill="#123c52"]{fill:#2a1c04}
+#dua .art [fill="#2fb5a0"]{fill:#ffd34d}
+#send .art [stroke="#19f9ff"]{stroke:#ffd34d}
+.splash{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(1.5rem + env(safe-area-inset-top,0px)) 1.5rem calc(1.5rem + env(safe-area-inset-bottom,0px));background:radial-gradient(ellipse at 50% 30%,#4a3207 0%,#120c02 55%,#000 100%)}
+.splash[hidden]{display:none}
+.splash button{margin:.7rem .4rem 0}
+.snd{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:15;margin:0;padding:.45rem 1.1rem;font-size:1.05rem;background:#0a0702}
+.snd[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+<svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMax slice">
+  <path d="M0 760H1200"/>
+  <path d="M480 760V700H720V760M500 700Q600 560 700 700M600 590V568M420 760V725Q450 690 480 725M720 725Q750 690 780 725V760M580 760V730A20 20 0 0 1 620 730V760"/>
+  <circle cx="600" cy="560" r="6"/>
+  <path d="M330 760V560H350V760M326 560L340 520L354 560M326 600H354M850 760V560H870V760M846 560L860 520L874 560M846 600H874"/>
+  <path d="M180 760V650H196V760M177 650L188 620L199 650M1004 760V650H1020V760M1001 650L1012 620L1023 650"/>
+  <path d="M1010 90A70 70 0 1 0 1010 230A56 56 0 1 1 1010 90Z"/>
+  <path d="M150 120l6 16 16 2-12 10 4 16-14-9-14 9 4-16-12-10 16-2zM330 210l4 10 10 1-8 6 3 10-9-6-9 6 3-10-8-6 10-1zM780 130l4 10 10 1-8 6 3 10-9-6-9 6 3-10-8-6 10-1zM60 300l4 10 10 1-8 6 3 10-9-6-9 6 3-10-8-6 10-1z"/>
+</svg>
+</div>
+<div class="lights" id="lights" aria-hidden="true"></div>
+<nav aria-label="Pages">
+  <a href="#home">Eid Mubarak</a>
+  <a href="#family">Together</a>
+  <a href="#eidi">Eidi</a>
+  <a href="#dua">Dua</a>
+  <a href="#send">Send wishes</a>
+</nav>
+<main>
+
+<!-- PAGE 1 -->
+<section id="home">
+<svg class="art" viewBox="0 0 600 380" role="img" aria-label="Crescent moon and stars over a mosque skyline with lanterns">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#c98a1a"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffe3a3" stop-opacity=".55"/><stop offset="1" stop-color="#ffe3a3" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#sky)"/>
+  <circle cx="300" cy="120" r="110" fill="url(#glow)"/>
+  <path d="M320 55 A65 65 0 1 0 320 185 A52 52 0 1 1 320 55 Z" fill="#f2c46d"/>
+  <g fill="#ffe3a3">
+    <path class="twinkle" d="M380 90l4 10 10 1-8 7 3 10-9-6-9 6 3-10-8-7 10-1z"/>
+    <path class="twinkle" d="M110 70l3 8 8 1-6 5 2 8-7-5-7 5 2-8-6-5 8-1z"/>
+    <path class="twinkle" d="M490 50l3 8 8 1-6 5 2 8-7-5-7 5 2-8-6-5 8-1z"/>
+    <circle class="twinkle" cx="60" cy="140" r="2.5"/><circle class="twinkle" cx="540" cy="150" r="2.5"/>
+    <circle class="twinkle" cx="440" cy="40" r="2"/><circle class="twinkle" cx="160" cy="30" r="2"/>
+  </g>
+  <g stroke="#f2c46d" stroke-width="2"><line x1="70" y1="0" x2="70" y2="60"/><line x1="530" y1="0" x2="530" y2="75"/></g>
+  <g class="swing"><path d="M70 60 l-14 16 v34 q14 12 28 0 v-34 z" fill="#f2c46d"/><path d="M70 76 l-8 8 v22 q8 7 16 0 v-22 z" fill="#ffe3a3"/></g>
+  <g class="swing" style="animation-delay:1.5s"><path d="M530 75 l-14 16 v34 q14 12 28 0 v-34 z" fill="#2fb5a0"/><path d="M530 91 l-8 8 v22 q8 7 16 0 v-22 z" fill="#ffe3a3"/></g>
+  <g fill="#08182b">
+    <rect y="300" width="600" height="80"/><rect x="220" y="270" width="160" height="40"/>
+    <path d="M230 270 Q300 175 370 270 Z"/><rect x="298" y="190" width="4" height="22"/><circle cx="300" cy="187" r="5"/>
+    <path d="M160 300 Q190 255 220 300 Z"/><path d="M380 300 Q410 255 440 300 Z"/>
+    <rect x="120" y="190" width="18" height="115"/><path d="M117 190 L129 160 L141 190 Z"/>
+    <rect x="462" y="190" width="18" height="115"/><path d="M459 190 L471 160 L483 190 Z"/>
+    <rect x="60" y="230" width="14" height="75"/><path d="M58 230 L67 208 L76 230 Z"/>
+    <rect x="526" y="230" width="14" height="75"/><path d="M524 230 L533 208 L542 230 Z"/>
+  </g>
+  <g fill="#f2c46d"><path d="M290 300v-22a10 10 0 0 1 20 0v22z"/><rect x="126" y="215" width="6" height="12" rx="3"/><rect x="468" y="215" width="6" height="12" rx="3"/></g>
+</svg>
+<div class="arabic" lang="ar" dir="rtl">عيد مبارك</div>
+<h1>Eid Mubarak</h1>
+<p>Wishing you and your family a blessed Eid filled with peace, joy and good health.</p>
+<p class="wish" id="wish" aria-live="polite"></p>
+<button id="btn" type="button">Send a wish</button>
+</section>
+
+<!-- PAGE 2 -->
+<section id="family" hidden>
+<svg class="art" viewBox="0 0 600 380" role="img" aria-label="A festive Eid table with dishes, dates and sweets under hanging lanterns">
+  <rect width="600" height="380" fill="#3a1f4d"/>
+  <rect y="0" width="600" height="250" fill="#4b2a63"/>
+  <g stroke="#f2c46d" stroke-width="2"><line x1="150" y1="0" x2="150" y2="50"/><line x1="300" y1="0" x2="300" y2="80"/><line x1="450" y1="0" x2="450" y2="50"/></g>
+  <g class="swing"><path d="M150 50 l-16 18 v38 q16 14 32 0 v-38 z" fill="#e0708a"/><path d="M150 68 l-9 9 v24 q9 8 18 0 v-24 z" fill="#ffe3a3"/></g>
+  <g class="swing" style="animation-delay:1s"><path d="M300 80 l-18 20 v42 q18 16 36 0 v-42 z" fill="#f2c46d"/><path d="M300 100 l-10 10 v26 q10 9 20 0 v-26 z" fill="#fff4d0"/></g>
+  <g class="swing" style="animation-delay:2s"><path d="M450 50 l-16 18 v38 q16 14 32 0 v-38 z" fill="#2fb5a0"/><path d="M450 68 l-9 9 v24 q9 8 18 0 v-24 z" fill="#ffe3a3"/></g>
+  <g fill="#ffe3a3"><circle class="twinkle" cx="60" cy="60" r="3"/><circle class="twinkle" cx="540" cy="90" r="3"/><circle class="twinkle" cx="90" cy="160" r="2.5"/><circle class="twinkle" cx="520" cy="190" r="2.5"/></g>
+  <!-- table -->
+  <rect y="250" width="600" height="130" fill="#7a3b3b"/>
+  <rect x="30" y="248" width="540" height="22" rx="6" fill="#f2c46d"/>
+  <!-- big platter -->
+  <ellipse cx="300" cy="238" rx="120" ry="22" fill="#e9e1d0"/>
+  <ellipse cx="300" cy="232" rx="100" ry="15" fill="#b3452f"/>
+  <g fill="#f2c46d"><circle cx="260" cy="226" r="9"/><circle cx="290" cy="220" r="9"/><circle cx="320" cy="222" r="9"/><circle cx="345" cy="228" r="9"/><circle cx="305" cy="232" r="9"/></g>
+  <!-- bowls with dates -->
+  <path d="M100 215 h90 a45 45 0 0 1 -90 0z" fill="#2fb5a0"/>
+  <g fill="#5a2e1a"><ellipse cx="125" cy="212" rx="9" ry="6"/><ellipse cx="148" cy="209" rx="9" ry="6"/><ellipse cx="170" cy="212" rx="9" ry="6"/></g>
+  <path d="M410 215 h90 a45 45 0 0 1 -90 0z" fill="#e0708a"/>
+  <g fill="#fff4d0"><circle cx="435" cy="210" r="8"/><circle cx="457" cy="207" r="8"/><circle cx="479" cy="210" r="8"/></g>
+  <!-- cups -->
+  <g fill="#ffe3a3"><path d="M215 300 h34 l-5 34 h-24z"/><path d="M350 300 h34 l-5 34 h-24z"/></g>
+</svg>
+<div class="arabic" lang="ar" dir="rtl">كل عام وأنتم بخير</div>
+<h1>Together is the best part</h1>
+<p>May your table be full, your home be warm, and every seat be taken by someone you love. Eid is for gathering, sharing and saying thank you.</p>
+</section>
+
+<!-- PAGE 3 -->
+<section id="eidi" hidden>
+<svg class="art" viewBox="0 0 600 380" role="img" aria-label="Gift boxes, gold coins and stars for Eidi">
+  <defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#8a5a0a"/></linearGradient></defs>
+  <rect width="600" height="380" fill="url(#g3)"/>
+  <g fill="#ffe3a3">
+    <path class="twinkle" d="M80 70l5 12 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
+    <path class="twinkle" d="M300 40l5 12 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
+    <path class="twinkle" d="M520 80l5 12 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
+    <circle class="twinkle" cx="180" cy="120" r="3"/><circle class="twinkle" cx="420" cy="130" r="3"/>
+  </g>
+  <rect y="320" width="600" height="60" fill="#0a3534"/>
+  <!-- gift left -->
+  <rect x="90" y="220" width="130" height="110" fill="#e0708a"/>
+  <rect x="145" y="220" width="20" height="110" fill="#ffe3a3"/>
+  <rect x="80" y="200" width="150" height="30" fill="#c95a75"/>
+  <rect x="145" y="200" width="20" height="30" fill="#ffe3a3"/>
+  <path d="M155 200 q-40 -40 -50 -10 q30 20 50 10z M155 200 q40 -40 50 -10 q-30 20 -50 10z" fill="#ffe3a3"/>
+  <!-- gift middle (big) -->
+  <rect x="240" y="190" width="150" height="140" fill="#f2c46d"/>
+  <rect x="305" y="190" width="20" height="140" fill="#b3452f"/>
+  <rect x="230" y="165" width="170" height="32" fill="#e0a93f"/>
+  <rect x="305" y="165" width="20" height="32" fill="#b3452f"/>
+  <path d="M315 165 q-45 -50 -58 -12 q35 24 58 12z M315 165 q45 -50 58 -12 q-35 24 -58 12z" fill="#b3452f"/>
+  <!-- gift right -->
+  <rect x="410" y="240" width="100" height="90" fill="#6a4fb3"/>
+  <rect x="450" y="240" width="18" height="90" fill="#ffe3a3"/>
+  <rect x="402" y="224" width="116" height="24" fill="#563f98"/>
+  <rect x="450" y="224" width="18" height="24" fill="#ffe3a3"/>
+  <!-- coins -->
+  <g fill="#f2c46d" stroke="#b3822a" stroke-width="3">
+    <circle cx="70" cy="335" r="22"/><circle cx="115" cy="345" r="22"/><circle cx="530" cy="340" r="22"/><circle cx="485" cy="350" r="20"/>
+  </g>
+  <g fill="#b3822a" font-family="Georgia,serif" font-size="22" text-anchor="middle"><text x="70" y="343">★</text><text x="115" y="353">★</text><text x="530" y="348">★</text><text x="485" y="358">★</text></g>
+</svg>
+<div class="arabic" lang="ar" dir="rtl">عيدية</div>
+<h1>Eidi for you</h1>
+<p>Here is a little something for the day: a hug, a smile and a wish that every good thing you hoped for arrives this year.</p>
+<p class="wish" id="eidiwish" aria-live="polite"></p>
+<button id="eidibtn" type="button">Open your gift</button>
+</section>
+
+<!-- PAGE 4 -->
+<section id="dua" hidden>
+<svg class="art" viewBox="0 0 600 380" role="img" aria-label="A glowing arched window with a crescent and an eight-pointed star">
+  <rect width="600" height="380" fill="#101a3a"/>
+  <defs><radialGradient id="g4" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#ffe3a3" stop-opacity=".5"/><stop offset="1" stop-color="#ffe3a3" stop-opacity="0"/></radialGradient></defs>
+  <rect width="600" height="380" fill="url(#g4)"/>
+  <!-- arch -->
+  <path d="M180 360 V170 A120 120 0 0 1 420 170 V360 Z" fill="#0a1228" stroke="#f2c46d" stroke-width="6"/>
+  <path d="M205 345 V175 A95 95 0 0 1 395 175 V345 Z" fill="#1b2f66"/>
+  <!-- crescent in arch -->
+  <path d="M312 120 A38 38 0 1 0 312 196 A30 30 0 1 1 312 120 Z" fill="#f2c46d"/>
+  <path class="twinkle" fill="#ffe3a3" d="M345 150l4 10 10 1-8 7 3 10-9-6-9 6 3-10-8-7 10-1z"/>
+  <!-- eight pointed star -->
+  <g transform="translate(300 270)">
+    <rect x="-38" y="-38" width="76" height="76" fill="#f2c46d"/>
+    <rect x="-38" y="-38" width="76" height="76" fill="#e0a93f" transform="rotate(45)"/>
+    <rect x="-20" y="-20" width="40" height="40" fill="#1b2f66"/>
+    <rect x="-20" y="-20" width="40" height="40" fill="#2fb5a0" transform="rotate(45)"/>
+  </g>
+  <!-- side stars -->
+  <g fill="#ffe3a3">
+    <path class="twinkle" d="M80 80l5 12 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
+    <path class="twinkle" d="M510 110l5 12 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
+    <circle class="twinkle" cx="100" cy="240" r="3"/><circle class="twinkle" cx="500" cy="260" r="3"/>
+    <circle class="twinkle" cx="60" cy="170" r="2.5"/><circle class="twinkle" cx="545" cy="200" r="2.5"/>
+  </g>
+</svg>
+<div class="arabic" lang="ar" dir="rtl">تقبل الله منا ومنكم</div>
+<h1>A prayer for you</h1>
+<p>May Allah accept your fasts and prayers, forgive what is past, and fill the year ahead with mercy, health and light.</p>
+</section>
+
+<!-- PAGE 5 -->
+<section id="send" hidden>
+<svg class="art" viewBox="0 0 600 300" role="img" aria-label="A phone with a chat bubble, a heart and a crescent moon">
+  <rect width="600" height="300" fill="#0c3a2f"/>
+  <g fill="#ffe3a3"><circle class="twinkle" cx="70" cy="60" r="3"/><circle class="twinkle" cx="530" cy="70" r="3"/><circle class="twinkle" cx="110" cy="230" r="2.5"/><circle class="twinkle" cx="500" cy="240" r="2.5"/></g>
+  <path d="M480 40 A34 34 0 1 0 480 108 A27 27 0 1 1 480 40 Z" fill="#f2c46d"/>
+  <rect x="225" y="25" width="150" height="250" rx="24" fill="#08182b" stroke="#19f9ff" stroke-width="4"/>
+  <rect x="240" y="55" width="120" height="190" rx="8" fill="#123c52"/>
+  <rect x="250" y="70" width="80" height="34" rx="12" fill="#25d366"/>
+  <rect x="270" y="116" width="80" height="34" rx="12" fill="#fff8e8"/>
+  <rect x="250" y="162" width="80" height="34" rx="12" fill="#25d366"/>
+  <path d="M300 232 C282 218 276 208 284 202 C290 198 297 202 300 207 C303 202 310 198 316 202 C324 208 318 218 300 232Z" fill="#ff2bd6"/>
+  <circle cx="150" cy="150" r="42" fill="#25d366"/>
+  <path d="M132 166 l6 -16 a22 22 0 1 1 10 10 z" fill="#fff"/>
+</svg>
+<div class="arabic" lang="ar" dir="rtl">أرسل تهنئتك</div>
+<h1>Send a wish back</h1>
+<p>Write your Eid wish and send it straight to your friend on WhatsApp. It opens in your own WhatsApp, ready to send.</p>
+<div class="form">
+  <label for="fname">Your name</label>
+  <input id="fname" type="text" autocomplete="name" placeholder="Your name">
+  <label for="fmsg">Your wish</label>
+  <textarea id="fmsg" rows="4">Eid Mubarak! Wishing you and your family a blessed Eid full of joy and peace.</textarea>
+  <div id="numrow">
+    <label for="fnum">WhatsApp number to send to (with country code)</label>
+    <input id="fnum" type="tel" inputmode="tel" placeholder="e.g. 447700900123">
+  </div>
+  <a id="wa" class="btn" href="#send" target="_blank" rel="noopener">Send on WhatsApp</a>
+  <p class="wish" id="waerr" aria-live="polite"></p>
+</div>
+</section>
+
+</main>
+<footer><div class="sign">Made by Zahid Malik</div></footer>
+<div class="splash" id="splash" role="dialog" aria-label="Welcome">
+  <div class="arabic" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+  <h1>Eid Mubarak</h1>
+  <p>Welcome. Open the page with a soft, peaceful instrumental melody.</p>
+  <div>
+    <button id="enter" type="button">Enter with sound</button>
+    <button id="entermute" type="button">Enter without sound</button>
+  </div>
+</div>
+<button id="snd" class="snd" type="button" aria-pressed="true" hidden>Sound: on</button>
+
+<script>
+(function(){
+  var pages = ["home","family","eidi","dua","send"];
+  var links = document.querySelectorAll("nav a");
+  function show(){
+    var name = location.hash.replace("#","");
+    if (pages.indexOf(name) < 0) name = "home";
+    pages.forEach(function(p){ document.getElementById(p).hidden = (p !== name); });
+    links.forEach(function(a){
+      if (a.getAttribute("href") === "#" + name) a.setAttribute("aria-current","page");
+      else a.removeAttribute("aria-current");
+    });
+    window.scrollTo(0,0);
+  }
+  window.addEventListener("hashchange", show);
+  var cols = ["#ffb000","#ffd34d","#fff0a8","#ff8a00"], box = document.getElementById("lights");
+  for (var k = 0; k < 18; k++){
+    var b = document.createElement("i");
+    b.style.setProperty("--c", cols[k % 4]);
+    b.style.setProperty("--d", (k % 4) * 0.45 + "s");
+    box.appendChild(b);
+  }
+  show();
+
+  function cycler(btnId, outId, list){
+    var i = 0, out = document.getElementById(outId);
+    document.getElementById(btnId).addEventListener("click", function(){
+      out.textContent = list[i % list.length]; i++;
+    });
+  }
+  var ctx = null, master, echo, timer, nextT = 0, soundOn = false, beat = 0.55;
+  var scale = [293.66,311.13,369.99,392,440,466.16,523.25,587.33]; /* D Hijaz */
+  var phrase = [[3,1],[4,1],[5,2],[4,1],[3,1],[2,2],[1,1],[0,1],[1,1],[2,1],[3,3],[0,1],[1,1],[2,2],[1,1],[0,3]];
+  function pluck(f, t, d){
+    var o = ctx.createOscillator(), g = ctx.createGain(), len = d * beat * 1.8;
+    o.type = "triangle"; o.frequency.value = f;
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(0.5, t + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.001, t + len);
+    o.connect(g); g.connect(master); g.connect(echo);
+    o.start(t); o.stop(t + len + 0.1);
+  }
+  function tick(){
+    if (!ctx || nextT > ctx.currentTime + 1) return;
+    phrase.forEach(function(n){ pluck(scale[n[0]], nextT, n[1]); nextT += n[1] * beat; });
+    nextT += 2 * beat;
+  }
+  function startSound(){
+    try {
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      master = ctx.createGain(); master.gain.value = 0.16; master.connect(ctx.destination);
+      echo = ctx.createDelay(1); echo.delayTime.value = 0.33;
+      var fb = ctx.createGain(); fb.gain.value = 0.35;
+      echo.connect(fb); fb.connect(echo); echo.connect(master);
+      [146.83, 220].forEach(function(f){
+        var o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = "sine"; o.frequency.value = f; g.gain.value = 0.18;
+        o.connect(g); g.connect(master); o.start();
+      });
+      nextT = ctx.currentTime + 0.3; tick();
+      timer = setInterval(tick, 500);
+      soundOn = true;
+    } catch (e) { ctx = null; soundOn = false; }
+  }
+  var splash = document.getElementById("splash"), snd = document.getElementById("snd");
+  function label(){ snd.textContent = soundOn ? "Sound: on" : "Sound: off"; snd.setAttribute("aria-pressed", soundOn ? "true" : "false"); }
+  function enter(withSound){
+    splash.hidden = true; snd.hidden = false;
+    if (withSound) startSound();
+    label();
+  }
+  document.getElementById("enter").addEventListener("click", function(){ enter(true); });
+  document.getElementById("entermute").addEventListener("click", function(){ enter(false); });
+  snd.addEventListener("click", function(){
+    if (!ctx) startSound();
+    else if (soundOn){ ctx.suspend(); soundOn = false; }
+    else { ctx.resume(); soundOn = true; }
+    label();
+  });
+  document.getElementById("enter").focus();
+
+  var SENDER = ""; // WhatsApp number with country code, digits only, e.g. "447700900123"
+  var numrow = document.getElementById("numrow"), fnum = document.getElementById("fnum"),
+      wa = document.getElementById("wa"), err = document.getElementById("waerr");
+  if (SENDER) numrow.hidden = true;
+  wa.addEventListener("click", function(e){
+    var num = (SENDER || fnum.value).replace(/\D/g, "");
+    var name = document.getElementById("fname").value.trim();
+    var msg = document.getElementById("fmsg").value.trim();
+    if (num.length < 8){
+      e.preventDefault();
+      err.textContent = "Enter the WhatsApp number with country code.";
+      return;
+    }
+    err.textContent = "";
+    var text = "\uD83C\uDF19 " + msg + (name ? "\n\u2014 " + name : "");
+    wa.href = "https://wa.me/" + num + "?text=" + encodeURIComponent(text);
+  });
+
+  cycler("btn","wish",[
+    "May Allah accept your prayers and fasts.",
+    "May your home be filled with laughter and light.",
+    "Taqabbal Allahu minna wa minkum.",
+    "May this Eid bring you closer to the ones you love."
+  ]);
+  cycler("eidibtn","eidiwish",[
+    "A year of good health, wrapped up for you.",
+    "A pocket full of blessings and a heart full of joy.",
+    "Surprise! Extra sweets are on the way.",
+    "Wishing you peace today and every day."
+  ]);
+})();
+</script>
+</body>
+</html>
